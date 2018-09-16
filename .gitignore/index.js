@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client({disableEveryone: true});
-const botconfig = require("./botconfig.json");
 
 // Connection du bot:
 // https://discordapp.com/oauth2/authorize?client_id=488318579758858262&permissions=8&scope=bot
@@ -40,7 +39,7 @@ bot.on("message", async msg => {
       }
     }
 
-    if(cmd === modoprefix + "clear"){
+    if(cmd === "modo!clear"){
       let channelsendclearlog = bot.channels.find('name', "logs");
       if(msg.channel.id === channelsendclearlog.id){
         msg.delete(5000);
@@ -177,4 +176,4 @@ bot.on('guildMemberAdd', member => {
   channel.send(`Welcome to the server, ${member} [avec l'id: ${member.id}]`);
 });
 
-bot.login(botconfig.token);
+bot.login("NDg4MzE4NTc5NzU4ODU4MjYy.DnaelA.LMLFmNU55IvqlfrlRqlgMyPBOmI");
