@@ -2,7 +2,7 @@
   "name": "Base de donnée",
   "version": "0.5.2",
   "description": "Robot qui gère le serveur",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
