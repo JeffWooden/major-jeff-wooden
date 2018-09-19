@@ -11,8 +11,8 @@ bot.on('ready', async () => {
 
 bot.on("message", async msg => {
     if(msg.author.bot) return;
-    let modoprefix = botconfig.modoprefix;
-    let prefix = botconfig.globalprefix;
+    let modoprefix = "..";
+    let prefix = ".";
     let messageArray = msg.content.split(" ");
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
